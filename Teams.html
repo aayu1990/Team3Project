@@ -1,3 +1,8 @@
+<?php
+  include_once 'includes/dbh.inc.php';
+  $_POST = array()
+?>
+
 <!DOCTYPE html>
 <html>
 <style>
@@ -65,7 +70,6 @@
     }
     </style>
 
-
   <meta charset="utf-8">
   <title>teams</title>
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -115,15 +119,14 @@
 
 <h2 class="cb-font-28 cb-list-header text-bold cb-sub-opening">Teams</h2>
 
-    <div class="row">
+     <div class="row">
         <div class="column">
           <div class="card">
             <img src="images/australia.png" alt="Jane" style="width:30%">
             <div class="container">
               <h4>Australia</h4>
-              <!-- <p class="title">  </p> -->
-              <p>Some text</p>
-              <p></p>
+              <p class="title">  </p> 
+              <p><a href="<?php echo australia.php;?>">Team details</a></p>
              
             </div>
           </div>
@@ -134,9 +137,9 @@
             <img src="images/uk.jpg" alt="Mike" style="width:30%">
             <div class="container">
               <h4>England</h4>
-              <!-- <p class="title">Art Director</p> -->
-              <p>Some text</p>
-              <p></p>
+              <p class="title">Art Director</p>
+              <p><a href="<?php echo England.php;?>">Team details</a></p>
+              
              
             </div>
           </div>
@@ -147,9 +150,8 @@
             <img src="images/India.png" alt="John" style="width:30%">
             <div class="container">
               <h4>India</h4>
-              <!-- <p class="title">Designer</p> -->
-              <p>Some text</p>
-              <p></p>
+              <p><a href="<?php echo India.php;?>">Team details</a></p>
+             
              
             </div>
           </div>
@@ -162,9 +164,8 @@
             <div class="card">
               <img src="images/Newzealand.png" alt="Jane" style="width:30%">
               <div class="container">
-                <h4>Newzealand</h4>
-                <!-- <p class="title">CEO &amp; Founder</p> -->
-                <p>Some text </p>
+                <h4>Newzealand</h4>    
+                <p><a href="<?php echo NewZealand.php;?>">Team details</a></p>
                 <p></p>
              
               </div>
@@ -176,9 +177,7 @@
               <img src="images/Pakistan.png" alt="Mike" style="width:30%">
               <div class="container">
                 <h4>Pakistan</h4>
-                <!-- <p class="title">Art Director</p> -->
-                <p>Some text</p>
-                <p></p>
+                <p><a href="<?php echo Pakistan.php;?>">Team details</a></p>
                
               </div>
             </div>
@@ -189,8 +188,7 @@
               <img src="images/SA.png" alt="John" style="width:30%">
               <div class="container">
                 <h4>South Africa</h4>
-                <!-- <p class="title">Designer</p> -->
-                <p>Some text</p>
+                <p><a href="<?php echo SA.php;?>">Team details</a></p>
                 <p></p>
    
               </div>
@@ -204,10 +202,9 @@
             <div class="card">
               <img src="images/us.png" alt="John" style="width:30%">
               <div class="container">
-                <h4>America</h4>
+                <h4>Srilanka</h4>
                 <!-- <p class="title">Designer</p> -->
-                <p>Some text</p>
-                <p></p>
+                <a href="<?php echo srilanka.php;?>">Team details</a>
           
               </div>
             </div>
@@ -219,15 +216,14 @@
               <img src="images/West_indies.png" alt="John" style="width:30%">
               <div class="container">
                 <h4>West Indies</h4>
-                <!-- <p class="title">Designer</p> -->
-                <p>Some text</p>
-                <p></p>
+                <a href="<?php echo WI.php;?>">Team details</a>
               
               </div>
             </div>
           </div>
-        </div>
-    
+        </div> -->
+
+   
  
   
 </body>
